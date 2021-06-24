@@ -1,0 +1,98 @@
+/******IMPORTS******/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@300;400;500;600;700&display=swap");
+/******VARIABLES******/
+/******RESET******/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.938rem;
+  background: #fafeff;
+  color: #44686f;
+}
+
+body h1, body h2, body h3 {
+  color: #11414b;
+  font-weight: 600;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img,
+body video {
+  max-width: 100%;
+  height: auto;
+}
+
+body button,
+body input {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.938rem;
+}
+
+body button {
+  cursor: pointer;
+}
+
+/******GLOBAL******/
+section h2 {
+  font-size: 1.25rem;
+  color: #11414b;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/******HEADER******/
+/*# sourceMappingURL=style.css.map */
