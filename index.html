@@ -12,25 +12,66 @@
 <body>
     <!-- HEADER -->
     <header class="Header">
-        <nav class="Nav container">
+        <nav class="Nav container flex flex-ai-c flex-jc-sb">
             <!-- logo -->
             <a href="#" class="Nav-logo">Travel</a>
             <!-- menu -->
             <ul class="Nav-menu">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#discover">discover</a></li>
-                <li><a href="#places">places</a></li>
+                <li class="Nav-menu-link"><a href="#home">home</a></li>
+                <li class="Nav-menu-link"><a href="#about">about</a></li>
+                <li class="Nav-menu-link"><a href="#discover">discover</a></li>
+                <li class="Nav-menu-link"><a href="#places">places</a></li>
+                <li class="Nav-menu-link">
+                    <i class="ri-close-line Nav-menu-toggle"></i>
+                </li>
             </ul>
-            <!-- toggles -->
-            <a href="#" class="menu-toggle">
-                <i class="ri-close-line"></i>
-            </a>
-            <a href="#" class="Nav-theme-toggle">
-                <i class="ri-moon-line"></i>
+            <!-- toggles -->  
+            <a href="#" class="Nav-toggle Nav-function-toggle">
+                <i class="ri-function-line"></i>
             </a>
         </nav>
     </header>
+    <!-- MAIN -->
+    <main class="Main">
+        <!-- HOME SECTON -->
+        <section class="Home">
+            <img src="images/home1.jpg" alt="" class="Home-img">
+            <div class="Home-container container grid">
+                <div class="Home-container-content">
+                    <span class="Home-container-content-subtitle">
+                        Discover Your Place
+                    </span>
+                    <h1 class="Home-container-content-title">
+                        explore the<br>best <b>beautiful<br>Beaches</b>
+                    </h1>
+                    <a href="#" class="Home-container-content-btn button">Explore</a>
+                </div>
+                <!-- social media links -->
+                <div class="Home-container-social flex">
+                    <a href="https::/www.twitter.com/" target="_blank" class="Home-container-social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="https::/www.pinterest.com/" target="_blank" class="Home-container-social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https::/www.linkedin.com/" target="_blank" class="Home-container-social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                </div>
+                <div class="Home-container-info flex flex-ai-c">
+                    <div class="Home-container-info-content">
+                        <span class="Home-container-info-content-title">5 best places to visit</span>
+                        <a href="#" class="Home-container-info-content-title-btn button button-flex">
+                            More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                    <div class="Home-container-info-overlay overlay">
+                        <img src="images/home2.jpg" alt="" class="Home-container-info-overlay-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="app/js/app.js"></script>
 </body>

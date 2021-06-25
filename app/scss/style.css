@@ -94,5 +94,206 @@ section h2 {
           justify-content: space-between;
 }
 
+.button {
+  display: inline-block;
+  background: #14505d;
+  color: #FFF;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover {
+  background: #0e373f;
+}
+
+.button-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: .25rem;
+          column-gap: .25rem;
+  background: none;
+  padding: 0;
+}
+
+.button-flex:hover {
+  background: none;
+}
+
 /******HEADER******/
+.Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #14505d;
+}
+
+.Header .Nav {
+  height: 3rem;
+}
+
+.Header .Nav-logo, .Header .Nav-toggle {
+  color: #FFF;
+}
+
+.Header .Nav-logo {
+  font-weight: 600;
+}
+
+.Header .Nav-toggle {
+  font-size: 1.2rem;
+}
+
+.Header .Nav .show-menu {
+  right: 0;
+}
+
+.Header .Nav-menu {
+  position: releative;
+}
+
+@media screen and (max-width: 767px) {
+  .Header .Nav-menu {
+    position: fixed;
+    background: #fafeff;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    -webkit-box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+            box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    line-height: 2.5rem;
+  }
+}
+
+.Header .Nav-menu-link {
+  cursor: pointer;
+}
+
+.Header .Nav-menu-link:hover a {
+  color: #44686f;
+}
+
+.Header .Nav-menu-link a {
+  color: #919ea1;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.Header .Nav-menu-toggle {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #11414b;
+  cursor: pointer;
+}
+
+/******MAIN******/
+.Main {
+  /******HOME SECTION******/
+}
+
+.Main .Home-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 83%;
+     object-position: 83%;
+}
+
+.Main .Home-container {
+  position: relative;
+  height: calc(100vh - 3rem);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 3rem;
+}
+
+.Main .Home-container-content-subtitle, .Main .Home-container-content-title {
+  color: #FFF;
+}
+
+.Main .Home-container-content-subtitle {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.Main .Home-container-content-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+}
+
+.Main .Home-container-social {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.Main .Home-container-social-link {
+  color: #FFF;
+  font-size: 1.2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Main .Home-container-info {
+  background: #14505d;
+  padding: 1.5rem 1rem;
+  -webkit-column-gap: .5rem;
+          column-gap: .5rem;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  width: 228px;
+}
+
+.Main .Home-container-info-content-title {
+  display: block;
+  font-size: 0.813rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #FFF;
+}
+
+.Main .Home-container-info-content-btn {
+  font-size: 0.75rem;
+}
+
+.Main .Home-container-info-overlay {
+  overflow: hidden;
+}
+
+.Main .Home-container-info-overlay-img {
+  width: 145px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Main .Home-container-info-overlay-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=style.css.map */
