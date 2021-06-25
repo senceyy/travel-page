@@ -133,6 +133,8 @@ section h2 {
   left: 0;
   z-index: 100;
   background: #14505d;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .Header .Nav {
@@ -201,9 +203,25 @@ section h2 {
   cursor: pointer;
 }
 
+.scroll-header {
+  background: #fafeff;
+  -webkit-box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+          box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+}
+
+.scroll-header .Nav-logo,
+.scroll-header .Nav-toggle {
+  color: #11414b;
+}
+
 /******MAIN******/
 .Main {
   /******HOME SECTION******/
+  /******BEACHES SECTION******/
+}
+
+.Main .Home .container {
+  height: 100vh;
 }
 
 .Main .Home-img {
@@ -295,5 +313,53 @@ section h2 {
 .Main .Home-container-info-overlay-img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.Main .About {
+  height: calc(100vh - 3rem);
+  padding: 3rem 0 0 0;
+}
+
+.Main .About .container {
+  grid-row-gap: 3rem;
+}
+
+.Main .About-content {
+  text-align: center;
+}
+
+.Main .About-content-text {
+  margin-bottom: 2.5rem;
+}
+
+.Main .About-media {
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Main .About-media-overlay {
+  overflow: hidden;
+}
+
+.Main .About-media-overlay-first, .Main .About-media-overlay-second {
+  height: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Main .About-media-overlay-first:hover, .Main .About-media-overlay-second:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Main .About-media-overlay-first {
+  width: 130px;
+}
+
+.Main .About-media-overlay-second {
+  width: 180px;
 }
 /*# sourceMappingURL=style.css.map */

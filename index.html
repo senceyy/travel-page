@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="Header">
+    <header class="Header" id="header">
         <nav class="Nav container flex flex-ai-c flex-jc-sb">
             <!-- logo -->
             <a href="#" class="Nav-logo">Travel</a>
@@ -34,9 +34,10 @@
     <!-- MAIN -->
     <main class="Main">
         <!-- HOME SECTON -->
-        <section class="Home">
+        <section class="Home" id="home">
+           <div class="container">
             <img src="images/home1.jpg" alt="" class="Home-img">
-            <div class="Home-container container grid">
+            <div class="Home-container grid">
                 <div class="Home-container-content">
                     <span class="Home-container-content-subtitle">
                         Discover Your Place
@@ -67,6 +68,27 @@
                     </div>
                     <div class="Home-container-info-overlay overlay">
                         <img src="images/home2.jpg" alt="" class="Home-container-info-overlay-img">
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section class="About" id="about">
+            <div class="container grid">
+                <div class="About-content">
+                    <h2 class="About-content-title">
+                        more information <br> about the best beaches
+                    </h2>
+                    <p class="About-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut maxime doloremque cum, recusandae doloribus incidunt laborum beatae consequatur.</p>
+                    <a href="#" class="About-content-btn button">Reserve a place</a>
+                </div>
+                <div class="About-media flex flex-ai-c">
+                    <div class="About-media-overlay">
+                        <img src="images/about1.jpg" alt="" class="About-media-overlay-first">
+                    </div>
+                    <div class="About-media-overlay">
+                        <img src="images/about2.jpg" alt="" class="About-media-overlay-second">
                     </div>
                 </div>
             </div>
