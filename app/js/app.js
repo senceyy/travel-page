@@ -31,3 +31,12 @@ function scrollHeader(){
     if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
     
 }
+
+// Initialize Swiper 
+    
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true  
+}); 
+    

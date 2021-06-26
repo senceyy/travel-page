@@ -84,6 +84,9 @@ body {
     a {
         text-decoration: none;
     }
+    img {
+        width: 100%;
+    }
     img,
     video {
         max-width: 100%;
@@ -101,7 +104,8 @@ body {
 }
 /******GLOBAL******/
 section {
-    h2 {
+    height: 100vh;
+    .h2-title {
         font-size: $h2-font-size;
         color: $title-color;
         text-align: center;
@@ -150,6 +154,8 @@ section {
     }
 }
 
+
+  
 /******HEADER******/
 .Header {
     width: 100%;
@@ -336,6 +342,103 @@ section {
                 }
             }
             
+        }
+    }
+    /******DISCOVER SECTION******/ 
+        /******SWIPER******/
+    .swiper-container {
+        width: 60%;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        position: relative; 
+        &-content {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1rem;
+            &-title {
+                text-align: left;
+                margin-bottom: $mb-0-25;
+                font-size: $h3-font-size;
+            }
+            &-desc {
+                font-size: $smaller-font-size;
+            }
+            &-title,
+            &-desc {
+                color: $white-color
+            }
+        }
+        &:hover img {
+            transform: $img-scale;
+        }   
+    }
+    .swiper-slide img {
+        transition: $img-transition;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+        /******SWIPER MOBILE******/
+    @media screen and (max-width: 767px) {
+        .swiper-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .swiper-slide {
+            width: 211px !important;
+        }  
+    }
+    /******EXPERIENCE SECTION******/
+    .Experience {
+       .container {
+           row-gap: 2.5rem;
+            justify-content: center;
+            justify-items: center;
+        }
+        &-content {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2.5rem;
+            justify-items: center;
+            padding: 0 2rem;
+            &-data {
+                &-title {
+                    font-size: $h2-font-size;
+                    margin-bottom: $mb-0-5;
+                }
+                &-desc {
+                    font-size: $small-font-size
+                }
+            }
+        }
+        &-media {
+            position: relative;
+            padding-bottom: 2rem;
+            &-overlay {
+                overflow: $img-hidden;
+                &:nth-child(1) {
+                    width: 263px;
+                    margin-right: 2rem;
+                }
+                &:nth-child(2){
+                    width: 120px;
+                    position: absolute;
+                    top: 2rem;
+                    right: 0;    
+                }
+            }
+            &-one,
+            &-two {
+                transition: $img-transition;
+                &:hover {
+                    transform: $img-scale;
+                }
+            }
         }
     }
 }

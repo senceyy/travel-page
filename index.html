@@ -7,6 +7,9 @@
     <title>Document</title>
     <!-- ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- CSS -->
     <link rel="stylesheet" href="app/scss/style.css">
 </head>
 <body>
@@ -77,7 +80,7 @@
         <section class="About" id="about">
             <div class="container grid">
                 <div class="About-content">
-                    <h2 class="About-content-title">
+                    <h2 class="About-content-title h2-title">
                         more information <br> about the best beaches
                     </h2>
                     <p class="About-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut maxime doloremque cum, recusandae doloribus incidunt laborum beatae consequatur.</p>
@@ -93,8 +96,80 @@
                 </div>
             </div>
         </section>
+        <!-- DISCOVER SECTION -->
+        <section class="Discover" id="discover">
+            <h2 class="Disovver-title h2-title">
+                Discover The Most <br>
+                Attractive Places
+            </h2>
+             <!-- Swiper -->
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/discover1.jpg" alt="">
+                        <div class="swiper-slide-content">
+                            <h2 class="swiper-slide-content-title">Hawaii</h2>
+                            <span class="swiper-slide-content-desc">15 hours avaible</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/discover2.jpg" alt="">
+                        <div class="swiper-slide-content">
+                            <h2 class="swiper-slide-content-title">Hawaii</h2>
+                            <span class="swiper-slide-content-desc">15 hours avaible</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/discover3.jpg" alt="">
+                        <div class="swiper-slide-content">
+                            <h2 class="swiper-slide-content-title">Hawaii</h2>
+                            <span class="swiper-slide-content-desc">15 hours avaible</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/discover4.jpg" alt="">
+                        <div class="swiper-slide-content">
+                            <h2 class="swiper-slide-content-title">Hawaii</h2>
+                            <span class="swiper-slide-content-desc">15 hours avaible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EXPERIENCE SECTION -->
+        <section class="Experience" id="experience">
+            <h2 class="Experience-title h2-title">With Our Experience <br> We Will Serve You</h2>
+            <div class="container grid">
+                <div class="Experience-content grid">
+                    <div class="Experience-content-data">
+                        <h2 class="Experience-content-data-title">20</h2>
+                        <span class="Experience-content-data-desc">Year <br>Experience</span>
+                    </div>
+
+                    <div class="Experience-content-data">
+                        <h2 class="Experience-content-data-title">78</h2>
+                        <span class="Experience-content-data-desc">Complate <br> tours</span>
+                    </div>
+
+                    <div class="Experience-content-data">
+                        <h2 class="Experience-content-data-title">350+</h2>
+                        <span class="Experience-content-data-desc">Tourist <br> destination</span>
+                    </div>
+                </div>
+                <div class="Experience-media grid">
+                    <div class="Experience-media-overlay">
+                        <img src="images/experience1.jpg" alt="" class=Experience-media-one>
+                    </div>
+                    <div class="Experience-media-overlay">
+                        <img src="images/experience2.jpg" alt="" class=Experience-media-two>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app/js/app.js"></script>
 </body>
 </html>

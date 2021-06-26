@@ -38,6 +38,10 @@ body a {
   text-decoration: none;
 }
 
+body img {
+  width: 100%;
+}
+
 body img,
 body video {
   max-width: 100%;
@@ -56,7 +60,11 @@ body button {
 }
 
 /******GLOBAL******/
-section h2 {
+section {
+  height: 100vh;
+}
+
+section .h2-title {
   font-size: 1.25rem;
   color: #11414b;
   text-align: center;
@@ -218,6 +226,10 @@ section h2 {
 .Main {
   /******HOME SECTION******/
   /******BEACHES SECTION******/
+  /******DISCOVER SECTION******/
+  /******SWIPER******/
+  /******SWIPER MOBILE******/
+  /******EXPERIENCE SECTION******/
 }
 
 .Main .Home .container {
@@ -361,5 +373,120 @@ section h2 {
 
 .Main .About-media-overlay-second {
   width: 180px;
+}
+
+.Main .swiper-container {
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.Main .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+}
+
+.Main .swiper-slide-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.Main .swiper-slide-content-title {
+  text-align: left;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.Main .swiper-slide-content-desc {
+  font-size: 0.75rem;
+}
+
+.Main .swiper-slide-content-title, .Main .swiper-slide-content-desc {
+  color: #FFF;
+}
+
+.Main .swiper-slide:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Main .swiper-slide img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .Main .swiper-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Main .swiper-slide {
+    width: 211px !important;
+  }
+}
+
+.Main .Experience .container {
+  row-gap: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.Main .Experience-content {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  justify-items: center;
+  padding: 0 2rem;
+}
+
+.Main .Experience-content-data-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.Main .Experience-content-data-desc {
+  font-size: 0.813rem;
+}
+
+.Main .Experience-media {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.Main .Experience-media-overlay {
+  overflow: hidden;
+}
+
+.Main .Experience-media-overlay:nth-child(1) {
+  width: 263px;
+  margin-right: 2rem;
+}
+
+.Main .Experience-media-overlay:nth-child(2) {
+  width: 120px;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+
+.Main .Experience-media-one, .Main .Experience-media-two {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Main .Experience-media-one:hover, .Main .Experience-media-two:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
