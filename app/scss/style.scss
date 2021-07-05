@@ -441,4 +441,87 @@ section {
             }
         }
     }
+    /******VIDEO SECTION******/
+    .Video {
+        &-header {
+            text-align: center;
+            &-desc {
+                margin: 20px 0 30px 0;
+            }
+        }
+        &-content {
+            position: relative;
+            &-button {
+                position: absolute;
+                right: 1rem;
+                bottom: -1rem;
+                padding: 1rem 1.5rem;
+                &-icon {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /******PLACES SECTION******/
+    .Places {
+        .title {
+            text-align: center;
+            margin-bottom: $mb-2-50;
+        }
+        &-container {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: center;
+            &-card {
+                height: 240px;
+                width: 180px;
+                position: relative;
+                overflow: $img-hidden;
+                &-img {
+                    height: 100%;
+                    transition: $img-transition;
+                }
+                
+                &:hover .Places-container-card-img{
+                    transform: $img-scale;
+                }
+                &-content {
+                    color: $white-color;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: .75rem .75rem 1rem;
+                    &-rating {
+                        align-self: flex-end;
+                        display: flex;
+                        align-items:center;
+                        i {
+                            font-size: .75rem;
+                            margin-right: $mb-0-25;
+                        }
+                    }
+                    &-header {
+                        &-title {
+                            font-size: $h3-font-size;
+                            color: $white-color;
+                            margin-bottom: $mb-0-25;
+                        }
+                        &-subtitle {     
+                            font-size: $small-font-size;
+                        }
+                    }
+                }
+                &-button {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    padding: .75rem 1rem;
+                }
+            }
+        }
+    }
 }

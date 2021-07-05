@@ -39,4 +39,28 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     loop: true  
 }); 
-    
+
+//Video
+const videoFile = document.getElementById('video-file'),
+      videoButton = document.getElementById('video-button'),
+      videoIcon = document.getElementById('video-icon')
+function playPause() {
+    if(videoFile.paused) {
+        videoFile.play()
+        //Remove and change the icon
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-fill')
+    } else {
+        videoFile.pause()
+        videoIcon.classList.add('ri-play-fill')
+        videoIcon.classList.remove('ri-pause-line')
+    }
+}
+videoButton.addEventListener('click', playPause)
+function finalVideo() {
+    // When the video is end then change the icon
+    videoIcon.classList.add('ri-play-fill')
+    videoIcon.classList.remove('ri-pause-line')
+
+}
+videoFile.addEventListener('ended', finalVideo)
